@@ -4,4 +4,11 @@
 @import "global/fonts";
 
 /* BLOCKS */
-@import "blocks/header";
+@import "./blocks/header.scss";
+@import './blocks/page.scss';
+@import './blocks/tabs.scss';
+@import './blocks/button.scss';
+@import './blocks/logo.scss';
+@import './blocks/hero.scss';
+@import './blocks/about.scss';
+@import './blocks/about-list.scss';

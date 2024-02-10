@@ -1,0 +1,41 @@
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.about-list__item {
+  max-width: 336px;
+  padding-top: 110px;
+  background-position: top 0 left 0;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+
+  &--contactless {
+    background-image: url("../../images/icons/stack.svg#contactless");
+  }
+
+  &--increased {
+    background-image: url("../../images/icons/stack.svg#increased");
+  }
+
+  &--analytics {
+    background-image: url("../../images/icons/stack.svg#analytics");
+  }
+
+  &--fraud {
+    background-image: url("../../images/icons/stack.svg#fraud");
+  }
+}
+
+.about-list__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-list__text {
+  margin: 0;
+}

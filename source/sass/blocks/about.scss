@@ -1,0 +1,53 @@
+.about {
+  margin-bottom: 100px;
+  background-image: url("../../images/icons/stack.svg#about");
+  background-size: 423px 489px;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0;
+  padding-bottom: 36px;
+}
+
+.about__title {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 101px;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  column-gap: 118px;
+}
+
+.about__text {
+  max-width: 410px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: 0;
+}
+
+.about__text-span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 354px;
+      height: 34px;
+      z-index: 0;
+      top: 10px;
+      left: 0;
+      background-color: $primary-02;
+      border-radius: 30px;
+      transform: rotate(-1.6deg);
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+  }
+

@@ -1,1 +1,44 @@
-/* здесь подключите шрифты*/
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/outfit/Outfit-Light.woff2') format('woff2'),
+      url('../../fonts/outfit/Outfit-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/outfit/Outfit-Bold.woff2') format('woff2'),
+      url('../../fonts/outfit/Outfit-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/outfit/Outfit-Medium.woff2') format('woff2'),
+      url('../../fonts/outfit/Outfit-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/outfit/Outfit-Regular.woff2') format('woff2'),
+      url('../../fonts/outfit/Outfit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/outfit/Outfit-SemiBold.woff2') format('woff2'),
+      url('../../fonts/outfit/Outfit-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

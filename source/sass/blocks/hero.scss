@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 671px 1fr;
+  column-gap: 64px;
+  margin-bottom: 100px;
+}
+
+.hero__body {
+  max-width: 671px;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.hero__title {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 101px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hero__description {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.hero__image {
+  width: 595px;
+  height: 529px;
+}
