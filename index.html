@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Business</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="tabs">
+        <ul class="tabs__list container">
+          <li class="tabs__item">
+            <button class="tabs__button tabs__button--active" type="button">For Business</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button"  type="button">For Customers</button>
+          </li>
+        </ul>
+      </div>
+      <nav class="header__nav container">
+        <a class="logo" href="">
+          <img class="logo__image" width="155" height="49" src="./images/logo.svg" alt="budss">
+        </a>
+        <button class="header__button button" type="button">Contact sales</button>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero container">
+        <div class="hero__body">
+          <h1 class="hero__title">Everyone is an Influencer</h1>
+          <p class="hero__description">Budss is a payments as a service and WOM engine dedicated to acquisition
+             and retention of customers to your business.</p>
+          <button class="hero__button button" type="button">Contact sales</button>
+        </div>
+        <img class="hero__image" width="595" height="529" src="./images/promo-img@1x.png" alt="">
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">About Budss</h2>
+        <div class="about__inner">
+          <p class="about__text">Payment as a service, powered seamlessly by our
+            <span class="about__text-span">
+              <span>network of shoppers</span>
+            </span>
+          </p>
+          <ul class="about-list">
+           <li class="about-list__item about-list__item--contactless">
+            <h3 class="about-list__title">Contactless</h3>
+            <p class="about-list__text">Budss uses near field communication (NFC) for making contactless payments.</p>
+           </li>
+           <li class="about-list__item about-list__item--increased">
+            <h3 class="about-list__title">Increased Buying Power</h3>
+            <p class="about-list__text">Returning customers spend up to 3X more.</p>
+           </li>
+           <li class="about-list__item about-list__item--analytics">
+            <h3 class="about-list__title">Analytics & Insights</h3>
+            <p class="about-list__text">Gain a holistic view into your customers buying behavior & purchasing patterns. </p>
+           </li>
+           <li class="about-list__item about-list__item--fraud">
+            <h3 class="about-list__title">Fraud Protection</h3>
+            <p class="about-list__text">Budss handles all payments with a fraud prevention algorithm to flag high risk purchases
+               & a user set PIN code to keep payment info secure. </p>
+           </li>
+          </ul>
+        </div>
+        </div>
+      </section>
+      <section>
 
-    <script src="js/script.js" defer></script>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
