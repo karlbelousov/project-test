@@ -1,0 +1,47 @@
+.how-works {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.how-works__inner {
+  position: relative;
+  overflow: hidden;
+  padding: 46px 0;
+}
+
+.how-works__title {
+  position: relative;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 136px;
+  margin: 0;
+
+  & + & {
+    margin-top: 68px;
+  }
+
+  &--secondary-01 {
+    color: $secondary-01;
+    animation: titleScrollRight 10s linear infinite;
+  }
+
+  &--primary-02 {
+    color: $primary-02;
+    animation: titleScrollLeft 10s linear infinite;
+  }
+
+  &--secondary-02 {
+    color: $secondary-02;
+    animation: titleScrollRight 10s linear infinite;;
+  }
+}
+
+.how-works__image {
+  position: absolute;
+  width: 308px;
+  height: 623px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

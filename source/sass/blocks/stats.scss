@@ -1,0 +1,27 @@
+.stats {
+  background-color: $primary-01;
+  padding: 40px 0;
+  margin-bottom: 100px;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.stats__list-item {
+  max-width: 220px;
+}
+
+.stats__percent {
+  font-size: 64px;
+  line-height: 68px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.stats__description {
+  font-weight: 600;
+  margin: 0;
+}

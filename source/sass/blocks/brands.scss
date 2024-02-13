@@ -1,0 +1,41 @@
+.brands {
+  background-color: $grayscale-06;
+  color: $grayscale-00;
+  padding: 100px 0;
+
+}
+
+.brands__inner {
+  display: grid;
+  grid-template-columns: 830px auto;
+  margin-bottom: 100px;
+}
+
+.brands__content {
+  max-width: 822px;
+}
+
+.brands__title {
+  font-size: 96px;
+  line-height: 102px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.brands__description {
+  max-width: 537px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.brands__social {
+  padding: 45px 0;
+}
+
+.brands__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
