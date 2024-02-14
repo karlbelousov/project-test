@@ -18,58 +18,69 @@
           </li>
         </ul>
       </div>
-      <nav class="header__nav container">
-        <a class="logo" href="">
-          <img class="logo__image" width="155" height="49" src="./images/icons/stack.svg#logo" alt="budss">
-        </a>
-        <button class="header__button button" type="button">Contact sales</button>
+      <nav class="header__nav">
+        <div class="header__nav-inner container">
+          <a class="logo" href="">
+            <img class="logo__image" width="155" height="49" src="./images/icons/stack.svg#logo" alt="budss">
+          </a>
+          <button class="header__button button button--dark-them" id="modal-auth" type="button">
+            <span class="button__inner">Contact sales</span>
+          </button>
+        </div>
       </nav>
     </header>
     <main class="main">
       <section class="hero container">
         <div class="hero__body">
           <h1 class="hero__title">Everyone is an Influencer</h1>
-          <p class="hero__description">Budss is a payments as a service and WOM engine dedicated to acquisition
-             and retention of customers to your business.</p>
-          <button class="hero__button button" type="button">Contact sales</button>
+          <p class="hero__description">
+            Budss is a payments as a service and WOM engine dedicated to acquisition
+            and retention of customers to your business.
+          </p>
+          <button class="hero__button button button--dark-them" type="button" id="modal-auth">
+            <span class="button__inner">Contact sales</span>
+          </button>
         </div>
         <img class="hero__image" width="489" height="610" src="./images/promo-img@1x.png" alt="">
       </section>
       <section class="about container">
         <h2 class="about__title">About Budss</h2>
         <div class="about__inner">
-          <p class="about__text">Payment as a service, powered seamlessly by our
+          <p class="about__text">
+            Payment as a service, powered seamlessly by our
             <span class="about__text-span">
               <span>network of shoppers</span>
             </span>
           </p>
           <ul class="about-list">
-           <li class="about-list__item about-list__item--contactless">
-            <h3 class="about-list__title">Contactless</h3>
-            <p class="about-list__text">Budss uses near field communication (NFC) for making contactless payments.</p>
-           </li>
-           <li class="about-list__item about-list__item--increased">
-            <h3 class="about-list__title">Increased Buying Power</h3>
-            <p class="about-list__text">Returning customers spend up to 3X more.</p>
+            <li class="about-list__item about-list__item--contactless">
+              <h3 class="about-list__title">Contactless</h3>
+              <p class="about-list__text">Budss uses near field communication (NFC) for making contactless payments.</p>
+            </li>
+            <li class="about-list__item about-list__item--increased">
+              <h3 class="about-list__title">Increased Buying Power</h3>
+              <p class="about-list__text">Returning customers spend up to 3X more.</p>
            </li>
            <li class="about-list__item about-list__item--analytics">
-            <h3 class="about-list__title">Analytics & Insights</h3>
-            <p class="about-list__text">Gain a holistic view into your customers buying behavior & purchasing patterns. </p>
+             <h3 class="about-list__title">Analytics & Insights</h3>
+             <p class="about-list__text">Gain a holistic view into your customers buying behavior & purchasing patterns. </p>
            </li>
            <li class="about-list__item about-list__item--fraud">
-            <h3 class="about-list__title">Fraud Protection</h3>
-            <p class="about-list__text">Budss handles all payments with a fraud prevention algorithm to flag high risk purchases
-               & a user set PIN code to keep payment info secure. </p>
-           </li>
+             <h3 class="about-list__title">Fraud Protection</h3>
+             <p class="about-list__text">
+              Budss handles all payments with a fraud prevention algorithm to flag high risk purchases
+              & a user set PIN code to keep payment info secure.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
       <section class="how-works">
-       <h2 class="visually-hidden">How works</h2>
-       <div class="how-works__inner">
-        <p class="how-works__title how-works__title--secondary-01">How Budss Works</p>
-        <p class="how-works__title how-works__title--primary-02">How Budss Works</p>
-        <p class="how-works__title how-works__title--secondary-02">How Budss Works</p>
+        <h2 class="visually-hidden">How works</h2>
+        <div class="how-works__inner">
+          <p class="how-works__title how-works__title--secondary-01">How Budss Works</p>
+          <p class="how-works__title how-works__title--primary-02">How Budss Works</p>
+          <p class="how-works__title how-works__title--secondary-02">How Budss Works</p>
        </div>
        <img class="how-works__image" width="308" height="623" src="./images/how-works@1x.png" alt="">
       </section>
@@ -143,7 +154,9 @@
       </section>
       <section class="business-grow">
         <h2 class="business-grow__title">Let Your Business Grow</h2>
-        <button class="business-grow__button button" type="button">Contact sales</button>
+        <button class="business-grow__button button" type="button" id="modal-auth">
+          <span class="button__inner">Contact sales</span>
+        </button>
       </section>
       <section class="brands">
         <div class="container">
@@ -151,7 +164,7 @@
             <div class="brands__content">
               <h2 class="brands__title">Your Brand<br> Awareness Maters</h2>
               <p class="brands__description">Budss is a husle free solution to put your brand on any
-                 digital surface including Instagram, Facebook, Twitter and TikTok
+                digital surface including Instagram, Facebook, Twitter and TikTok
               </p>
             </div>
             <ul class="brands__social social-list">
@@ -211,7 +224,9 @@
           </li>
         </ul>
         <div class="footer__buttons">
-          <button class="button" type="button">Contact sales</button>
+          <button class="button button--dark-them" type="button" id="modal-auth">
+            <span class="button__inner">Contact sales</span>
+          </button>
           <button class="footer__button footer__button--appstore" type="button"></button>
           <button class="footer__button footer__button--googleplay" type="button"></button>
         </div>
@@ -231,7 +246,9 @@
       <p class="cookies__text">This website uses cookies to ensure you get the best experience on our website.
         They also allow us to analyze user behavior in order to constantly improve the website for you.
       </p>
-      <button class="button cookies__button" type="button">Accept</button>
+      <button class="button cookies__button" type="button">
+        <span class="button__inner">Accept</span>
+      </button>
       <button class="cookies__button" type="button">Decline</button>
       <button class="cookies__cancel" type="button">
         <img src="./images/icons/stack.svg#close" alt="" width="26" height="26" aria-label="Close cookies">
@@ -241,32 +258,34 @@
       <button class="modal-auth__cancel" type="button">
         <img src="./images/icons/stack.svg#close" width="26" height="26" alt="">
       </button>
-      <form class="molal-auth__form">
+      <form class="modal-auth__form">
         <fieldset class="modal-auth__group">
-          <label class="modal-auth__title" for="name">Name</label>
-          <input class="modal-auth__input" type="text" name="name" id="name" placeholder="Enter name" required>
+          <label class="modal-auth__title modal-auth__title--required" for="name">Name</label>
+          <input class="modal-auth__input" autocomplete="off"  type="text" name="name" id="name" placeholder="Enter name" required>
         </fieldset>
         <fieldset class="modal-auth__group">
-          <label class="modal-auth__title" for="email">Email</label>
-          <input class="modal-auth__input" type="email" name="email" id="email" placeholder="Enter email" required>
+          <label class="modal-auth__title modal-auth__title--required" for="email">Email</label>
+          <input class="modal-auth__input" autocomplete="off" type="email" name="email" id="email" placeholder="Enter email" required>
         </fieldset>
         <fieldset class="modal-auth__group">
-          <label class="modal-auth__title" for="phone-number">Phone number</label>
-          <input class="modal-auth__input" type="tel" name="phone-number" id="phone-number" placeholder=" + 1 900 000 00 00 " required>
+          <label class="modal-auth__title modal-auth__title--required" for="phone-number">Phone number</label>
+          <input class="modal-auth__input" autocomplete="off" type="tel" name="phone-number" id="phone-number" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7900000000" required>
         </fieldset>
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title" for="company">Company</label>
-          <input class="modal-auth__input" type="text" name="company" id="company" placeholder="Enter company">
+          <input class="modal-auth__input" autocomplete="off" type="text" name="company" id="company" placeholder="Enter company">
         </fieldset>
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title" for="website">Website/Store URL</label>
-          <input class="modal-auth__input" type="text" name="website" id="website" placeholder="Enter Website/Store URL">
+          <input class="modal-auth__input" autocomplete="off" type="text" name="website" id="website" placeholder="Enter Website/Store URL">
         </fieldset>
         <p class="modal-auth__text">
           By submitting this form you are agreeing to Budss’s
           <a class="modal-auth__link">Privacy Policy</a> and <a class="modal-auth__link">Terms of Use</a>
         </p>
-        <button class="modal-auth__button button" type="submit">Contact sales</button>
+        <button class="modal-auth__button button" type="submit">
+          <span class="button__inner">Contact sales</span>
+        </button>
       </form>
     </div>
     <div class="success hidden">
@@ -276,8 +295,11 @@
       <img class="success__image" width="297" height="232" src="./images/icons/stack.svg#success" alt="">
       <h2 class="success__title">Thank you!</h2>
       <p class="success__text">Thank you, we have received your application and will contact<br> you soon!</p>
-      <button class="success__button" type="button">Super!</button>
+      <button class="success__button button" type="button">
+        <span class="button__inner">Super!</span>
+      </button>
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
