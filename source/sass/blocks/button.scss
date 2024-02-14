@@ -1,4 +1,11 @@
+.button > * {
+  position: relative;
+  z-index: 1;
+}
+
 .button {
+  position: relative;
+  z-index: 1;
   background-color: $primary-01;
   color: $grayscale-07;
   font-size: 20px;
@@ -6,4 +13,82 @@
   line-height: 25px;
   padding: 16px 30px;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform;
+  transition: backgroung-color 0.2s ease,
+              border-color 0.2s  ease,
+              fill 0.2s ease,
+              transform 0.2s ease-in-out;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%) rotate(10deg);
+    transform-origin: top left;
+    will-change: transform;
+    transition: backgroung-color 0.2s ease,
+              border 0.2s  ease,
+              fill 0.2s ease,
+              transform 0.2s ease-in-out;
+    background-color: $grayscale-01;
+    border-radius: 16px;
+  }
+
+  &:hover:not(&:disabled) {
+    color: $grayscale-00;
+    transform: scale(1.1);
+    transition: backgroung-color 0.2s ease,
+                border 0.2s  ease,
+                fill 0.2s ease,
+                transform 0.2s ease-in-out;
+                will-change: transform;
+
+    &::before {
+      transform: translate(0);
+      z-index: 0;
+      transition: backgroung-color 0.2s ease,
+                border 0.2s  ease,
+                fill 0.2s ease,
+                transform 0.2s ease-in-out;
+                will-change: transform;
+    }
+
+    & .button__inner {
+      color: $grayscale-07;
+    }
+  }
+
+  &:active {
+    background-color: $primary-00;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &:focus {
+    outline: 4px solid $primary-03;
+  }
+
+  &:disabled {
+    background-color: $grayscale-03;
+  }
+
+  &--dark-them {
+    &:hover {
+      outline: 2px solid $primary-01;
+    }
+  }
+}
+
+.button__inner {
+  color: $grayscale-07;
 }

@@ -1,11 +1,19 @@
 .header {
   margin-bottom: 62px;
+  position: relative;
 }
 
-.header__nav {
+.header__nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 7px 20px;
 }
 
+.header__nav.sticky {
+  background-color: $grayscale-01;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%
+}

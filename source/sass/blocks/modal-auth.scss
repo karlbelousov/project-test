@@ -1,5 +1,6 @@
 .modal-auth {
   position: fixed;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -30,7 +31,17 @@
   line-height: 22px;
   font-weight: 500;
   margin-bottom: 4px;
-  display: block;
+  display:block;
+
+  &--required {
+    display: flex;
+    gap: 2px;
+
+    &::after {
+      content: '*';
+      color: $additional-01;
+    }
+  }
 }
 
 .modal-auth__input {
@@ -45,6 +56,21 @@
   font-size: 14px;
   line-height: 22px;
   color: inherit;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $grayscale-03;
+  }
+
+  &:focus {
+    outline: 1px solid $grayscale-03;
+  }
+
+  &:disabled {
+    border-color: $grayscale-10;
+  }
 }
 
 .modal-auth__text {
@@ -57,8 +83,4 @@
 .modal-auth__link {
   color: $primary-01;
   text-decoration: underline;
-}
-
-.modal-auth__button {
-  background-color: $grayscale-03;
 }

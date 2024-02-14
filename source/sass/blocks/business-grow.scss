@@ -1,4 +1,6 @@
 .business-grow {
+  display: grid;
+  justify-content: center;
   background-color: $grayscale-06;
   color: $grayscale-01;
   text-align: center;
@@ -14,4 +16,6 @@
   margin-bottom: 40px;
 }
 
-
+.business-grow__button {
+  justify-self: center;
+}
