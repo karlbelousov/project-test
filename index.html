@@ -66,7 +66,7 @@
       </section>
       <section class="how-works">
        <h2 class="visually-hidden">How works</h2>
-       <div class="how-works__inner container">
+       <div class="how-works__inner">
         <p class="how-works__title how-works__title--secondary-01">How Budss Works</p>
         <p class="how-works__title how-works__title--primary-02">How Budss Works</p>
         <p class="how-works__title how-works__title--secondary-02">How Budss Works</p>
@@ -227,7 +227,58 @@
           <a href="">Terms of Use - Sellers & Customers</a>
         </div>
       </div>
-    </>
+    </footer>
+    <div class="cookies">
+      <p class="cookies__text">This website uses cookies to ensure you get the best experience on our website.
+        They also allow us to analyze user behavior in order to constantly improve the website for you.
+      </p>
+      <button class="button cookies__button" type="button">Accept</button>
+      <button class="cookies__button" type="button">Decline</button>
+      <button class="cookies__cancel" type="button">
+        <img src="./images/icons/stack.svg#close" alt="" width="26" height="26" aria-label="Close cookies">
+      </button>
+    </div>
+    <div class="modal-auth hidden">
+      <button class="modal-auth__cancel" type="button">
+        <img src="./images/icons/stack.svg#close" width="26" height="26" alt="">
+      </button>
+      <form class="molal-auth__form">
+        <fieldset class="modal-auth__group">
+          <label class="modal-auth__title" for="name">Name</label>
+          <input class="modal-auth__input" type="text" name="name" id="name" placeholder="Enter name" required>
+        </fieldset>
+        <fieldset class="modal-auth__group">
+          <label class="modal-auth__title" for="email">Email</label>
+          <input class="modal-auth__input" type="email" name="email" id="email" placeholder="Enter email" required>
+        </fieldset>
+        <fieldset class="modal-auth__group">
+          <label class="modal-auth__title" for="phone-number">Phone number</label>
+          <input class="modal-auth__input" type="tel" name="phone-number" id="phone-number" placeholder=" + 1 900 000 00 00 " required>
+        </fieldset>
+        <fieldset class="modal-auth__group">
+          <label class="modal-auth__title" for="company">Company</label>
+          <input class="modal-auth__input" type="text" name="company" id="company" placeholder="Enter company">
+        </fieldset>
+        <fieldset class="modal-auth__group">
+          <label class="modal-auth__title" for="website">Website/Store URL</label>
+          <input class="modal-auth__input" type="text" name="website" id="website" placeholder="Enter Website/Store URL">
+        </fieldset>
+        <p class="modal-auth__text">
+          By submitting this form you are agreeing to Budss’s
+          <a class="modal-auth__link">Privacy Policy</a> and <a class="modal-auth__link">Terms of Use</a>
+        </p>
+        <button class="modal-auth__button button" type="submit">Contact sales</button>
+      </form>
+    </div>
+    <div class="success hidden">
+      <button class="success__cancel" type="button">
+        <img src="./images/icons/stack.svg#close" alt="" width="26" height="26" aria-label="Close success">
+      </button>
+      <img class="success__image" width="297" height="232" src="./images/icons/stack.svg#success" alt="">
+      <h2 class="success__title">Thank you!</h2>
+      <p class="success__text">Thank you, we have received your application and will contact<br> you soon!</p>
+      <button class="success__button" type="button">Super!</button>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
