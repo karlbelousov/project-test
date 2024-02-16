@@ -20,19 +20,49 @@
       </div>
       <nav class="header__nav">
         <div class="header__nav-inner container">
-          <a class="logo" href="">
+          <a class="logo" href="#">
             <img class="logo__image" width="155" height="49" src="./images/icons/stack.svg#logo" alt="budss">
           </a>
           <button class="header__button button button--dark-them" id="modal-auth" type="button">
             <span class="button__inner">Contact sales</span>
           </button>
+          <button class="header__burger" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="mobile-menu">
+           <button class="mobile-menu__close" type="button">
+            <span></span>
+            <span></span>
+           </button>
+           <button class="mobile-menu__button button" type="button">Contact sales</button>
+           <ul class="mobile-menu__list">
+             <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="#">For Business</a>
+             </li>
+             <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="#">For Customers</a>
+             </li>
+             <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Terms Of Use - Seller</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Terms of Use - Sellers & Customers</a>
+            </li>
+           </ul>
+          </ul>
         </div>
       </nav>
     </header>
     <main class="main">
       <section class="hero container">
         <div class="hero__body">
-          <h1 class="hero__title">Everyone is an Influencer</h1>
+          <h1 class="hero__title title-large">Everyone is an Influencer</h1>
           <p class="hero__description">
             Budss is a payments as a service and WOM engine dedicated to acquisition
             and retention of customers to your business.
@@ -41,10 +71,15 @@
             <span class="button__inner">Contact sales</span>
           </button>
         </div>
-        <img class="hero__image" width="489" height="610" src="./images/promo-img@1x.png" alt="">
+        <picture>
+          <source type="image/webp" media="(max-width: 375px)" srcset="./images/promo-img-mobile@1x.webp 1x, ./images/promo-img-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="./images/promo-img@1x.webp 1x, ./images/promo-img@2x.webp 2x">
+          <source media="(max-width: 375px)" srcset="./images/promo-img-mobile@1x.png 1x, ./images/promo-img-mobile@2x.png 2x">
+          <img class="hero__image" width="595" height="529" srcset="./images/promo-img@1x.png 1x, ./images/promo-img@2x.png 2x" alt="">
+        </picture>
       </section>
       <section class="about container">
-        <h2 class="about__title">About Budss</h2>
+        <h2 class="about__title title-large">About Budss</h2>
         <div class="about__inner">
           <p class="about__text">
             Payment as a service, powered seamlessly by our
@@ -162,7 +197,7 @@
         <div class="container">
           <div class="brands__inner">
             <div class="brands__content">
-              <h2 class="brands__title">Your Brand<br> Awareness Maters</h2>
+              <h2 class="brands__title title-large">Your Brand<br> Awareness Maters</h2>
               <p class="brands__description">Budss is a husle free solution to put your brand on any
                 digital surface including Instagram, Facebook, Twitter and TikTok
               </p>
