@@ -10,12 +10,9 @@
   color: $grayscale-07;
   font-size: 20px;
   font-weight: 600;
-  line-height: 25px;
+  line-height: auto;
   padding: 16px 30px;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   will-change: transform;
   transition: backgroung-color 0.2s ease,

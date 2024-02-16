@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 .about-list__item {
@@ -26,16 +30,26 @@
   &--fraud {
     background-image: url("../../images/icons/stack.svg#fraud");
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
 }
 
 .about-list__title {
-  font-size: 48px;
+  font-size: clamp(32px, 4vw, 48px);
   font-weight: 700;
-  line-height: 51px;
+  line-height: 1.06;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 16px;
+  }
 }
 
 .about-list__text {
   margin: 0;
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 1.2;
 }

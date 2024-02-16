@@ -4,12 +4,14 @@
 @import "global/fonts";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
 @import './blocks/page.scss';
+@import "./blocks/header.scss";
 @import './blocks/tabs.scss';
+@import './blocks/mobile-menu.scss';
 @import './blocks/button.scss';
 @import './blocks/logo.scss';
 @import './blocks/hero.scss';
+@import './blocks/title-large.scss';
 @import './blocks/about.scss';
 @import './blocks/about-list.scss';
 @import './blocks/how-works.scss';
@@ -23,3 +25,4 @@
 @import './blocks/cookies.scss';
 @import './blocks/modal-auth.scss';
 @import './blocks/success.scss';
+

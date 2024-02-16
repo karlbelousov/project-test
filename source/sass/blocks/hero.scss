@@ -5,34 +5,43 @@
   column-gap: 64px;
   margin-bottom: 100px;
   padding-right: 17px;
-  background-image: url('../../images/icons/stack.svg#promo');
-  background-size: contain;
-  background-position: 350px center;
-  background-repeat: no-repeat;
+
+  @media (max-width: $mobile) {
+    display: block;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__body {
   max-width: 671px;
   padding-top: 20px;
   padding-left: 50px;
+
+  @media (max-width: $mobile) {
+    padding: 0 16px;
+    margin-bottom: 137px;
+    max-width: 345px;
+  }
 }
 
 .hero__title {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 101px;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .hero__description {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1,2;
   margin: 0;
   margin-bottom: 40px;
 }
 
 .hero__image {
-  width: 490px;
-  height: 611px;
+  width: 595px;
+  height: 529px;
+
+  @media (max-width: $mobile) {
+    width: 275px;
+    height: 259px;
+  }
 }

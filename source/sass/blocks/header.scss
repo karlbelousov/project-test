@@ -1,6 +1,10 @@
 .header {
   margin-bottom: 62px;
   position: relative;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 51px;
+  }
 }
 
 .header__nav-inner {
@@ -8,6 +12,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 7px 20px;
+
+  @media (max-width: $mobile) {
+    padding: 16px;
+  }
 }
 
 .header__nav.sticky {
@@ -16,4 +24,29 @@
   z-index: 10;
   top: 0;
   width: 100%
+}
+
+.header__button {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+  height: 26px;
+
+   span {
+    width: 40px;
+    height: 2px;
+    background-color: $grayscale-07;
+   }
+
+   @media (min-width: $mobile) {
+    display: none;
+   }
 }
