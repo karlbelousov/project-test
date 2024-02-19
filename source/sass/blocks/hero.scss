@@ -1,26 +1,26 @@
 .hero {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 671px 1fr;
-  column-gap: 64px;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 100px;
-  padding-right: 17px;
+  background-image: url('../../images/hero.svg');
+  background-repeat: no-repeat;
+  background-position: right 30px;
 
   @media (max-width: $mobile) {
     display: block;
     margin-bottom: 40px;
+    background-image: url('../../images/hero-mobile.svg');
+    background-position: center bottom;
   }
 }
 
 .hero__body {
-  max-width: 671px;
   padding-top: 20px;
   padding-left: 50px;
 
   @media (max-width: $mobile) {
-    padding: 0 16px;
     margin-bottom: 137px;
-    max-width: 345px;
+    padding: 0;
   }
 }
 
@@ -30,18 +30,27 @@
 }
 
 .hero__description {
+  max-width: 534px;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1,2;
   margin: 0;
   margin-bottom: 40px;
 }
 
+.hero__button {
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
 .hero__image {
-  width: 595px;
-  height: 529px;
+  width: 489px;
+  height: 523px;
+  margin-right: 16px;
 
   @media (max-width: $mobile) {
-    width: 275px;
-    height: 259px;
+    width: 233px;
+    height: 272px;
+    margin: 0 auto;
   }
 }

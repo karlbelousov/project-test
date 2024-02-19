@@ -1,21 +1,35 @@
 .business-grow {
-  display: grid;
-  justify-content: center;
   background-color: $grayscale-06;
   color: $grayscale-01;
+  padding: 100px 0;
+
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+}
+
+.business-grow__content {
+  padding: 60px 0;
   text-align: center;
-  padding-top: 160px;
-  padding-bottom: 60px;
+  border: 1px solid $grayscale-04;
+  border-radius: 60px;
+  margin-bottom: 100px;
+
+  @media (max-width: $mobile) {
+    padding: 20px 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .business-grow__title {
-  font-size: 64px;
-  line-height: 68px;
-  font-weight: 700;
   margin: 0;
   margin-bottom: 40px;
-}
 
-.business-grow__button {
-  justify-self: center;
+  br {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
 }

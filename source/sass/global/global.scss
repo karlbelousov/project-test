@@ -1,21 +1,21 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 @keyframes titleScrollRight {
   0% {
-    right: 0;
+    transform: translateX(0);
   }
 
   100% {
-    right: -3200px;
+    transform: translateX(100%);
   }
 }
 
 @keyframes titleScrollLeft {
   0% {
-    left: 0;
+    transform: translateX(0);
   }
 
   100% {
-    left: -3200px;
+    transform: translateX(-100%);
   }
 }
 

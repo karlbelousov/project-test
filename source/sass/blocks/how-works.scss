@@ -1,39 +1,52 @@
 .how-works {
-  position: relative;
-  overflow: hidden;
   margin-bottom: 100px;
+  padding: 40px 0;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
 }
 
 .how-works__inner {
   position: relative;
   overflow: hidden;
-  padding: 46px 0;
+
+  @media (max-width: $mobile) {
+    padding: 61px 0;
+  }
 }
 
 .how-works__title {
-  position: relative;
   font-size: 128px;
   font-weight: 700;
-  line-height: 136px;
+  line-height: 1,06;
   margin: 0;
+
+  @media (max-width: $mobile) {
+    font-size: 48px;
+  }
 
   & + & {
     margin-top: 68px;
+
+    @media (max-width: $mobile) {
+      margin-top: 93px;
+    }
   }
 
   &--secondary-01 {
     color: $secondary-01;
-    animation: titleScrollRight 10s linear infinite;
+    animation: titleScrollRight 2s linear infinite;
   }
 
   &--primary-02 {
     color: $primary-02;
-    animation: titleScrollLeft 10s linear infinite;
+    animation: titleScrollLeft 2s linear infinite;
   }
 
   &--secondary-02 {
     color: $secondary-02;
-    animation: titleScrollRight 10s linear infinite;;
+    animation: titleScrollRight 2s linear infinite;;
   }
 }
 
@@ -44,4 +57,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: $mobile) {
+    width: 228px;
+    height: 461px;
+  }
 }

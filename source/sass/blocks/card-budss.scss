@@ -4,23 +4,42 @@
   color: $grayscale-00;
   border-radius: 30px;
   min-height: 362px;
+  width: 100%;
 
   &--1,
   &--4 {
     width: 733px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   &--2,
   &--3 {
     width: 547px;
+
+     @media (max-width: $mobile) {
+       width: 100%;
+    }
   }
 
   &--1 {
-    background-image: url('../../images/cards-budss.svg');
+    background-image: url('../../images/card-budss-large.svg');
     background-position: 0 0;
+
+    @media (max-width: $mobile) {
+      background-position: 0 bottom;
+      background-image: url('../../images/card-budss-small.svg');
+      padding-bottom: 193px;
+    }
 
     .card-budss__content {
       padding-left: 329px;
+
+      @media (max-width: $mobile) {
+        padding-left: 40px;
+      }
     }
   }
 
@@ -31,36 +50,59 @@
       url('../../images/icons/stack.svg#cards-budss-3');
     background-position: right 80px, 394px bottom, 92px bottom;
     background-size: 88px 167px, 93px 86px, 72px 64px;
+    padding-right: 92px;
+
+
+    @media (max-width: $mobile) {
+      padding-bottom: 128px;
+      padding-right: 0;
+      background-position: right 201px, 135px bottom, 10px bottom;
+      background-size: 61px 116px, 93px 86px, 72px 64px;
+    }
   }
 
   &--3 {
     background-image: url("../../images/icons/stack.svg#cards-budss-4");
     background-position: right bottom;
     background-size: 202px 83px;
+    padding-right: 67px;
   }
 
   &--4 {
     background-image: url("../../images/icons/stack.svg#cards-budss-5");
     background-position: 480px bottom;
     background-size: 210px 301px;
+    padding-right: 291px;
+
+    @media (max-width: $mobile) {
+      background-position: 145px bottom;
+      background-size: 143px 185px;
+      padding-bottom: 185px;
+      padding-right: 0;
+    }
   }
 }
 
 .card-budss__content {
   padding-left: 40px;
   padding-top: 40px;
+
+  @media (max-width: $mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .card-budss__title {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: clamp(32px, 8vw, 48px);
+  line-height: 1.06;
   font-weight: 600;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .card-budss__desctription {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: clamp(16px, 8vw, 20px);
+  line-height: 1.2;
   margin: 0;
 }

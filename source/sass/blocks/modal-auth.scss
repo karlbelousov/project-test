@@ -10,6 +10,11 @@
   color: $grayscale-00;
   border-radius: 20px;
   padding: 40px;
+
+  @media (max-width: $mobile) {
+    padding: 20px 16px;
+    width: 335px;
+  }
 }
 
 .modal-auth__cancel {

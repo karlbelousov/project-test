@@ -1,17 +1,23 @@
 .cookies {
-  z-index: 10;
+  z-index: 20;
   position: fixed;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1285px;
-  height: 117px;
+  width: 90%;
+  max-width: 1320px;
+  min-height: 117px;
   padding: 30px;
   padding-right: 60px;
   background-color: $grayscale-07;
   border-radius: 16px;
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile) {
+    display: block;
+    padding: 20px 30px;
+  }
 }
 
 .cookies.hidden {
@@ -19,12 +25,23 @@
 }
 
 .cookies__text {
+  max-width: 783px;
   font-size: 20px;
   line-height: 28px;
   color: $grayscale-09;
   margin: 0;
-  max-width: 783px;
   margin-right: auto;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.cookies__button {
+  @media (max-width: $mobile) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .cookies__button:not(.button) {
@@ -36,6 +53,11 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .cookies__cancel {

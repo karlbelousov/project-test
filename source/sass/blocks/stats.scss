@@ -8,20 +8,37 @@
   display: flex;
   justify-content: center;
   column-gap: 100px;
+
+  @media (max-width: $mobile) {
+    display: block;
+    padding: 0 16px;
+  }
 }
 
 .stats__list-item {
-  max-width: 220px;
+  @media (max-width: $mobile) {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
 }
 
 .stats__percent {
-  font-size: 64px;
-  line-height: 68px;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.06;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .stats__description {
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.2;
   font-weight: 600;
   margin: 0;
+
+  @media (max-width: $mobile) {
+    br {
+      display: none;
+    }
+  }
 }

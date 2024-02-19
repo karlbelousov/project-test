@@ -9,21 +9,13 @@
   border-radius: 50%;
   background-color: $primary-01;
 
-  &:nth-child(even) {
-    align-self: flex-end;
+  @media (max-width: $mobile) {
+    width: 64px;
+    height: 64px;
   }
 
-  &:nth-child(1) {
-    img {
-      width: 39px;
-      height: 72px;
-      align-self: flex-end;
-    }
-  }
-  &:nth-child(2) {
-    img {
-      height: 36px;
-    }
+  &:nth-child(even) {
+   margin-top: auto;
   }
 }
 
@@ -34,8 +26,31 @@
   width: 90px;
   height: 90px;
 
+  @media (max-width: $mobile) {
+    width: 64px;
+    height: 64px;
+  }
+
   img {
     width: 45px;
     height: 45px;
+
+    @media (max-width: $mobile) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &--facebook {
+    img {
+      margin-top: 20px;
+      width: 39px;
+      height: 72px;
+
+      @media (max-width: $mobile) {
+        width: 27px;
+        height: 51px;
+      }
+    }
   }
 }
