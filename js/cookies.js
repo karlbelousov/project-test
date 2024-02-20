@@ -1,0 +1,1 @@
+const cookies=document.querySelector(".cookies"),buttonsCookies=cookies.querySelectorAll("button");function onCloseCookies(){cookies.classList.add("hidden")}function onKeyDownUp(o){"Escape"===o.key&&(o.preventDefault(),onCloseCookies())}buttonsCookies.forEach((o=>{o.addEventListener("click",onCloseCookies)})),document.addEventListener("keydown",onKeyDownUp);
