@@ -23,7 +23,7 @@
           <a class="logo" href="#">
             <img class="logo__image" width="155" height="49" src="./images/logo.svg" alt="budss">
           </a>
-          <button class="header__button button button--dark-them" id="modal-auth" type="button">
+          <button class="header__button button button--dark-them open-modal-auth" type="button">
             <span class="button__inner">Contact sales</span>
           </button>
           <button class="header__burger" type="button">
@@ -37,7 +37,7 @@
             <span></span>
             <span></span>
            </button>
-           <button class="mobile-menu__button button" type="button">Contact sales</button>
+           <button class="mobile-menu__button button open-modal-auth" type="button">Contact sales</button>
            <ul class="mobile-menu__list">
              <li class="mobile-menu__item">
                <a class="mobile-menu__link" href="#">For Business</a>
@@ -55,7 +55,6 @@
               <a class="mobile-menu__link" href="#">Terms of Use - Sellers & Customers</a>
             </li>
            </ul>
-          </ul>
         </div>
       </nav>
     </header>
@@ -67,15 +66,15 @@
             Budss is a payments as a service and WOM engine dedicated to acquisition
             and retention of customers to your business.
           </p>
-          <button class="hero__button button button--dark-them" type="button" id="modal-auth">
-            <span class="button__inner">Contact sales</span>
+          <button class="hero__button button button--dark-them" type="button">
+            <span class="button__inner open-modal-auth">Contact sales</span>
           </button>
         </div>
         <picture>
           <source type="image/webp" media="(max-width: 375px)" srcset="./images/hero-img-mobile@1x.webp 1x, ./images/hero-img-mobile@2x.webp 2x">
           <source type="image/webp" srcset="./images/hero-img@1x.webp 1x, ./images/hero-img@2x.webp 2x">
           <source media="(max-width: 375px)" srcset="./images/hero-img-mobile@1x.png 1x, ./images/hero-img-mobile@2x.png 2x">
-          <img class="hero__image" width="489" height="523" srcset="./images/hero-img@1x.png 1x, ./images/hero-img@2x.png 2x" alt="">
+          <img class="hero__image" width="489" height="523" src="./images/hero-img@1x.png" srcset="./images/hero-img@2x.png 2x" alt="">
         </picture>
       </section>
       <section class="about container">
@@ -119,7 +118,7 @@
           <picture>
             <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.webp 1x, ./images/how-woks-mobile@2x.webp 2x" type="image/webp">
             <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.png 1x, ./images/how-woks-mobile@2x.png 2x">
-            <img class="how-works__image" width="308" height="623" srcset="./images/how-works@1x.png 1x, ./images/how-works@2x.png" alt="">
+            <img class="how-works__image" width="308" height="623" src="./images/how-works@1x.png" srcset="./images/how-works@2x.png 2x" alt="">
           </picture>
        </div>
       </section>
@@ -194,7 +193,7 @@
       <section class="business-grow">
         <div class="business-grow__content container">
           <h2 class="business-grow__title title-smaller">Let Your<br> Business Grow</h2>
-          <button class="business-grow__button button" type="button" id="modal-auth">
+          <button class="business-grow__button button open-modal-auth" type="button">
             <span class="button__inner">Contact sales</span>
           </button>
         </div>
@@ -272,7 +271,7 @@
           </li>
         </ul>
         <div class="footer__buttons">
-          <button class="footer__button button button--dark-them" type="button" id="modal-auth">
+          <button class="footer__button button button--dark-them open-modal-auth" type="button" id="modal-auth">
             <span class="button__inner">Contact sales</span>
           </button>
           <button class="footer__button button-appstore" type="button"></button>
@@ -309,23 +308,23 @@
       <form class="modal-auth__form">
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title modal-auth__title--required" for="name">Name</label>
-          <input class="modal-auth__input" autocomplete="off"  type="text" name="name" id="name" placeholder="Enter name" required>
+          <input class="modal-auth__input" autocomplete="on" type="text" name="name" id="name" placeholder="Enter name" required>
         </fieldset>
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title modal-auth__title--required" for="email">Email</label>
-          <input class="modal-auth__input" autocomplete="off" type="email" name="email" id="email" placeholder="Enter email" required>
+          <input class="modal-auth__input" autocomplete="on" type="email" name="email" id="email" placeholder="Enter email" required>
         </fieldset>
         <fieldset class="modal-auth__group modal-auth__group--phone">
           <label class="modal-auth__title modal-auth__title--required" for="phone-number">Phone number</label>
-          <input class="modal-auth__input" autocomplete="off" type="tel" name="phone-number" id="phone-number" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7900000000" required>
+          <input class="modal-auth__input" autocomplete="on" type="tel" name="phone-number" id="phone-number" placeholder="+7900000000" required>
         </fieldset>
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title" for="company">Company</label>
-          <input class="modal-auth__input" autocomplete="off" type="text" name="company" id="company" placeholder="Enter company">
+          <input class="modal-auth__input" type="text" name="company" id="company" placeholder="Enter company">
         </fieldset>
         <fieldset class="modal-auth__group">
           <label class="modal-auth__title" for="website">Website/Store URL</label>
-          <input class="modal-auth__input" autocomplete="off" type="text" name="website" id="website" placeholder="Enter Website/Store URL">
+          <input class="modal-auth__input" type="text" name="website" id="website" placeholder="Enter Website/Store URL">
         </fieldset>
         <p class="modal-auth__text">
           By submitting this form you are agreeing to Budss’s
@@ -347,6 +346,7 @@
         <span class="button__inner">Super!</span>
       </button>
     </div>
+    <script src="vendor/pristine/pristine.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js" type="module"></script>
   </body>
