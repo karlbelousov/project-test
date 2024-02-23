@@ -14,7 +14,7 @@
   padding: 7px 20px;
 
   @media (max-width: $mobile) {
-    padding: 16px;
+    // padding: 16px;
   }
 }
 
@@ -23,7 +23,7 @@
   position: fixed;
   z-index: 10;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .header__button {
