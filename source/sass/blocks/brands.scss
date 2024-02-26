@@ -1,19 +1,21 @@
+.brands {
+  padding: 0;
+}
+
 .brands__inner {
   display: grid;
-  grid-template-columns: 822px 1fr;
+  grid-template-columns: 1fr auto;
   margin-bottom: 100px;
   min-height: 272px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
     display: block;
     margin-bottom: 0;
-    padding: 0 16px;
   }
 }
 
 .brands__content {
-  @media (max-width: $mobile) {
-    max-width: 355px;
+  @media (max-width: 835px) {
     margin-bottom: 20px;
   }
 }
@@ -33,7 +35,7 @@
 .brands__social {
   padding: 45px 0;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
     min-height: 128px;
     padding: 0;
     margin-bottom: 40px;
@@ -43,20 +45,26 @@
 .brands__logo {
   display: flex;
   align-items: center;
-  column-gap: 90px;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
-  padding: 0;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 765px) {
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+  @media (max-width: 690px) {
     justify-content: start;
+   }
+
+  @media (max-width: 375px) {
     gap: 30px 40px;
     padding: 50px 20px;
   }
 }
 
 .brands__logo-item {
-  @media (max-width: $mobile) {
+  @media (max-width: 1010px) {
     &:nth-child(1) {
       order: 0;
 

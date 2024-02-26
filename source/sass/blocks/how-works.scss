@@ -1,35 +1,40 @@
 .how-works {
+  position: relative;
   margin-bottom: 100px;
-  padding: 40px 0;
+  height: 636px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     margin-bottom: 40px;
   }
 }
 
 .how-works__inner {
-  position: relative;
+  padding: 46px 0;
   overflow: hidden;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 565px) {
     padding: 61px 0;
   }
 }
 
 .how-works__title {
-  font-size: 128px;
+  font-size: clamp(48px, 8vw, 128px);
   font-weight: 700;
-  line-height: 1,06;
+  line-height: normal;
   margin: 0;
-
-  @media (max-width: $mobile) {
-    font-size: 48px;
-  }
 
   & + & {
     margin-top: 68px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: 1035px) {
+      margin-top: 93px;
+    }
+
+    @media (max-width: 810px) {
+      margin-top: 150px;
+    }
+
+    @media (max-width: 565px) {
       margin-top: 93px;
     }
   }
@@ -59,7 +64,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     width: 228px;
     height: 461px;
   }

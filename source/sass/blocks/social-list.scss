@@ -1,6 +1,11 @@
 .social-list {
   display: flex;
   gap: 40px;
+
+
+  @media (max-width: 500px) {
+   gap: 28px;
+  }
 }
 
 .social-list__item {
@@ -9,7 +14,7 @@
   border-radius: 50%;
   background-color: $primary-01;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 500px) {
     width: 64px;
     height: 64px;
   }
@@ -26,7 +31,7 @@
   width: 90px;
   height: 90px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 500px) {
     width: 64px;
     height: 64px;
   }
@@ -35,7 +40,7 @@
     width: 45px;
     height: 45px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: 500px) {
       width: 32px;
       height: 32px;
     }

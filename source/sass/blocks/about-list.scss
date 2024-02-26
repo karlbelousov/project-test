@@ -1,14 +1,19 @@
 .about-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 92px 70px;
+  gap: 70px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
+    gap: 50px;
+  }
+
+  @media (max-width: 375px) {
     display: block;
   }
 }
 
 .about-list__item {
+  max-width: 336px;
   padding-top: 110px;
   background-position: top 0 left 0;
   background-size: 100px 100px;
@@ -29,10 +34,6 @@
   &--fraud {
     background-image: url("../../images/icons/stack.svg#fraud");
   }
-
-  @media (max-width: $mobile) {
-    margin-bottom: 60px;
-  }
 }
 
 .about-list__title {
@@ -42,7 +43,7 @@
   margin: 0;
   margin-bottom: 20px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     margin-bottom: 16px;
   }
 }

@@ -74,7 +74,7 @@
           <source type="image/webp" media="(max-width: 375px)" srcset="./images/hero-img-mobile@1x.webp 1x, ./images/hero-img-mobile@2x.webp 2x">
           <source type="image/webp" srcset="./images/hero-img@1x.webp 1x, ./images/hero-img@2x.webp 2x">
           <source media="(max-width: 375px)" srcset="./images/hero-img-mobile@1x.png 1x, ./images/hero-img-mobile@2x.png 2x">
-          <img class="hero__image" width="489" height="523" src="./images/hero-img@1x.png" srcset="./images/hero-img@2x.png 2x" alt="">
+          <img class="hero__image" width="595" height="529" src="./images/hero-img@1x.png" srcset="./images/hero-img@2x.png 2x" alt="">
         </picture>
       </section>
       <section class="about container">
@@ -111,16 +111,16 @@
       </section>
       <section class="how-works">
         <h2 class="visually-hidden">How works</h2>
-        <div class="how-works__inner container">
+        <div class="how-works__inner">
           <p class="how-works__title how-works__title--secondary-01">How Budss Works</p>
           <p class="how-works__title how-works__title--primary-02">How Budss Works</p>
           <p class="how-works__title how-works__title--secondary-02">How Budss Works</p>
-          <picture>
-            <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.webp 1x, ./images/how-woks-mobile@2x.webp 2x" type="image/webp">
-            <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.png 1x, ./images/how-woks-mobile@2x.png 2x">
-            <img class="how-works__image" width="308" height="623" src="./images/how-works@1x.png" srcset="./images/how-works@2x.png 2x" alt="">
-          </picture>
        </div>
+       <picture>
+        <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.webp 1x, ./images/how-woks-mobile@2x.webp 2x" type="image/webp">
+        <source media="(max-width: 375px)" srcset="./images/how-woks-mobile@1x.png 1x, ./images/how-woks-mobile@2x.png 2x">
+        <img class="how-works__image" width="308" height="623" src="./images/how-works@1x.png" srcset="./images/how-works@2x.png 2x" alt="">
+      </picture>
       </section>
       <section class="stats">
         <h2 class="visually-hidden">Stats</h2>
@@ -147,8 +147,8 @@
             <span class="why-budss__span"><span>To Grow Your Business</span></span>
           </p>
         </div>
-          <ul class="why-budss__list">
-            <li class="why-budss__item">
+          <div class="why-budss__list">
+            <div class="why-budss__items">
               <article class="card-budss card-budss--1">
                 <div class="card-budss__content">
                   <h3 class="card-budss__title">Turn your customers into loyal influencers</h3>
@@ -156,9 +156,8 @@
                     loyal customers for acquisition and retention.
                   </p>
                 </div>
+                <img src="./images/card-budss-large.svg" width="318" height="362" alt="">
               </article>
-            </li>
-            <li class="why-budss__item">
               <article class="card-budss card-budss--2">
                 <div class="card-budss__content">
                   <h3 class="card-budss__title">Harness the power of buying in bulk</h3>
@@ -168,8 +167,8 @@
                   </p>
                 </div>
               </article>
-            </li>
-            <li class="why-budss__item">
+            </div>
+            <div class="why-budss__items">
               <article class="card-budss card-budss--3">
                 <div class="card-budss__content">
                   <h3 class="card-budss__title">Supercharge Loyalty With Instant Cash Back</h3>
@@ -177,8 +176,6 @@
                     favorite stores.</p>
                 </div>
               </article>
-            </li>
-            <li class="why-budss__item">
               <article class="card-budss card-budss--4">
                 <div class="card-budss__content">
                   <h3 class="card-budss__title">Seasoned with AI and Gamification</h3>
@@ -186,19 +183,21 @@
                     offering recommendations for their next purchase and optimizing rewards for after purchase.
                   </p>
                 </div>
+                <img src="./images/icons/stack.svg#cards-budss-5" width="210" height="301" alt="">
               </article>
-            </li>
-          </ul>
+            </div>
+
+          </div>
       </section>
       <section class="business-grow">
-        <div class="business-grow__content container">
+        <div class="business-grow__content">
           <h2 class="business-grow__title title-smaller">Let Your<br> Business Grow</h2>
           <button class="business-grow__button button open-modal-auth" type="button">
             <span class="button__inner">Contact sales</span>
           </button>
         </div>
-        <div class="brands">
-          <div class="brands__inner container">
+        <div class="brands container">
+          <div class="brands__inner">
             <div class="brands__content">
               <h2 class="brands__title title-large">Your Brand Awareness Maters</h2>
               <p class="brands__description">Budss is a husle free solution to put your brand on any
@@ -228,7 +227,7 @@
               </li>
             </ul>
           </div>
-          <ul class="brands__logo container">
+          <ul class="brands__logo">
             <li class="brands__logo-item">
               <img src="./images/logo-brand1.svg" width="126" height="60" alt="Woo Commerce">
             </li>
@@ -249,47 +248,51 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__nav container">
-        <a class="footer__logo logo" href="">
-          <img class="logo__image" width="155" height="49" src="./images/logo.svg" alt="budss">
-        </a>
-        <ul class="footer__menu">
-          <li class="footer__menu-item">
-            <a href="#">For Business</a>
-          </li>
-          <li class="footer__menu-item">
-            <a href="#">For Customers</a>
-          </li>
-          <li class="footer__menu-item footer__menu-item--top">
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li class="footer__menu-item footer__menu-item--top">
-            <a href="#">Terms Of Use - Seller</a>
-          </li>
-          <li class="footer__menu-item footer__menu-item--top">
-            <a href="#">Terms of Use - Sellers & Customers</a>
-          </li>
-        </ul>
-        <div class="footer__buttons">
-          <button class="footer__button button button--dark-them open-modal-auth" type="button" id="modal-auth">
-            <span class="button__inner">Contact sales</span>
-          </button>
-          <button class="footer__button button-appstore" type="button"></button>
-          <button class="footer__button button-googleplay" type="button"></button>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__nav">
+            <a class="footer__logo logo" href="">
+              <img class="logo__image" width="155" height="49" src="./images/logo.svg" alt="budss">
+            </a>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#">For Business</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#">For Customers</a>
+              </li>
+              <li class="footer__menu-item footer__menu-item--top">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__menu-item footer__menu-item--top">
+                <a href="#">Terms Of Use - Seller</a>
+              </li>
+              <li class="footer__menu-item footer__menu-item--top">
+                <a href="#">Terms of Use - Sellers & Customers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__buttons">
+            <button class="footer__button button button--dark-them open-modal-auth" type="button" id="modal-auth">
+              <span class="button__inner">Contact sales</span>
+            </button>
+            <button class="footer__button button-appstore" type="button"></button>
+            <button class="footer__button button-googleplay" type="button"></button>
+          </div>
         </div>
-      </div>
-      <div class="footer__bottom container">
-        <p class="footer__copyright">
-          © Copyright 2023, All Rights Reserved by Budss
-        </p>
-        <div class="footer__links">
-          <a class="footer__link footer__link--bottom" href="#">Privacy Policy</a>
-          <a class="footer__link footer__link--bottom" href="#">Terms Of Use - Seller</a>
-          <a class="footer__link footer__link--bottom" href="#">Terms of Use - Sellers & Customers</a>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © Copyright 2023, All Rights Reserved by Budss
+          </p>
+          <div class="footer__links">
+            <a class="footer__link footer__link--bottom" href="#">Privacy Policy</a>
+            <a class="footer__link footer__link--bottom" href="#">Terms Of Use - Seller</a>
+            <a class="footer__link footer__link--bottom" href="#">Terms of Use - Sellers & Customers</a>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="cookies">
+    <div class="cookies hidden">
       <button class="cookies__cancel" type="button">
         <img src="./images/icons/stack.svg#close" alt="" width="26" height="26" aria-label="Close cookies">
       </button>

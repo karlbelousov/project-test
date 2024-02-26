@@ -3,46 +3,76 @@
   padding-top: 40px;
   padding-bottom: 21px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     padding: 20px 0;
+  }
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  margin-bottom: 30px;
+
+
+  @media (max-width: 1030px) {
+
+  }
+
+  @media (max-width: 920px) {
+    display: block;
   }
 }
 
 .footer__nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
 
-  @media (max-width: $mobile) {
-    display: block;
-  }
-}
-
-.footer__logo {
-  @media (max-width: $mobile) {
+  @media (max-width: 920px) {
+    gap: 30px;
     margin-bottom: 40px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 640px) {
+    display: block;
   }
 }
 
 .footer__menu {
   display: flex;
+  column-gap: 40px;
   align-items: center;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 965px) {
+
+  }
+
+  @media (max-width: 835px) {
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+  }
+
+  @media (max-width: 640px) {
     display: block;
-    margin-bottom: 40px;
   }
 }
 
 .footer__menu-item {
-  margin-right: 40px;
   font-size: 20px;
-  line-height: auto;
+  line-height: normal;
+
+
+  @media (max-width: 640px) {
+    margin-bottom: 16px;
+  }
 
   &--top{
     display: none;
 
-    @media (max-width: $mobile) {
+    @media (max-width: 640px) {
       display: block;
     }
   }
@@ -60,17 +90,17 @@
 
 .footer__buttons {
   display: flex;
-  align-items: center;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 640px) {
     display: block;
     margin-bottom: 40px;
   }
 }
 
 .footer__button {
-  @media (max-width: $mobile) {
+  @media (max-width: 640px) {
     margin-bottom: 40px;
 
     &:nth-child(2) {
@@ -82,7 +112,6 @@
     }
   }
 }
-
 
 .footer__bottom {
   display: flex;
@@ -109,7 +138,7 @@
     color: inherit;
 
     &--bottom {
-      @media (max-width: $mobile) {
+      @media (max-width: 835px) {
         display: none;
       }
   }

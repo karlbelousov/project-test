@@ -1,7 +1,7 @@
 .mobile-menu {
   display: none;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     display: block;
     min-height: 812px;
     width: 100%;

@@ -5,8 +5,14 @@
   background-position: left 0 bottom 0;
   padding-bottom: 36px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
+    display: block;
     background-image: none;
+  }
+
+
+  @media (max-width: 375px) {
+    margin-bottom: 40px;
     padding-bottom: 0;
   }
 }
@@ -15,17 +21,16 @@
   margin: 0;
   margin-bottom: 80px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 375px) {
     margin-bottom: 30px;
   }
 }
 
 .about__inner {
-  display: grid;
-  grid-template-columns: 410px 1fr;
-  column-gap: 118px;
+  display: flex;
+  justify-content: space-between;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
     display: block;
   }
 }
@@ -37,7 +42,12 @@
   line-height: 1.2;
   margin: 0;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 835px) {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 375px) {
     font-size: 24px;
     margin-bottom: 40px;
   }

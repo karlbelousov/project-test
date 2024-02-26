@@ -1,10 +1,10 @@
 .business-grow {
   background-color: $grayscale-06;
   color: $grayscale-01;
-  padding: 100px 0;
+  padding: 100px 16px;
 
   @media (max-width: $mobile) {
-    padding: 40px 0;
+    padding: 40px 16px;
   }
 }
 
@@ -13,7 +13,7 @@
   text-align: center;
   border: 1px solid $grayscale-04;
   border-radius: 60px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
 
   @media (max-width: $mobile) {
     padding: 20px 40px;

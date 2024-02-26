@@ -5,18 +5,29 @@
 }
 
 .stats__list {
+  max-width: 750px;
   display: flex;
   justify-content: center;
   column-gap: 100px;
+  margin: 0 auto;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 1000px) {
+    column-gap: 50px;
+  }
+
+  @media (max-width: 800px) {
+    column-gap: 30px;
+  }
+
+  @media (max-width: 665px) {
     display: block;
     padding: 0 16px;
+    margin: 0 auto;
   }
 }
 
 .stats__list-item {
-  @media (max-width: $mobile) {
+  @media (max-width: 665px) {
     display: flex;
     align-items: center;
     column-gap: 20px;
