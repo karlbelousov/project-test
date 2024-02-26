@@ -11,9 +11,10 @@
   border-radius: 20px;
   padding: 40px;
 
-  @media (max-width: $mobile) {
-    padding: 20px 16px;
+  @media (max-width: 470px) {
     width: 335px;
+    min-height: 547px;
+    padding: 20px 16px;
   }
 }
 

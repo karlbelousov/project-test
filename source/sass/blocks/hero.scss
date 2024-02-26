@@ -25,6 +25,10 @@
    padding-left: 0;
   }
 
+  @media (max-width: 1000px) {
+    margin-bottom: 40px;
+   }
+
   @media (max-width: 375px) {
     margin-bottom: 137px;
     padding: 0;

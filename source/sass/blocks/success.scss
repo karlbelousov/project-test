@@ -12,8 +12,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media (max-width: $mobile) {
+  @media (max-width: 470px) {
     width: 335px;
+    min-height: 477px;
     padding: 40px 20px;
   }
 }
